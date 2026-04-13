@@ -43,3 +43,19 @@ This project uses PHP and a SQL database, so it cannot run on GitHub Pages alone
 - Add environment-specific database credentials if needed
 - Secure the login logic for production use
 - Deploy to a PHP host such as 000webhost, InfinityFree, or a VPS with Apache/Nginx and PHP
+
+## XAMPP setup notes
+
+If you are using XAMPP:
+
+- Copy the `INFO152project_jal547/` folder into your XAMPP web root:
+  - Windows: `C:\xampp\htdocs\INFO152project_jal547`
+  - Linux: `/opt/lampp/htdocs/INFO152project_jal547`
+- Start Apache and MySQL from the XAMPP control panel.
+- Open `http://localhost/phpmyadmin` and import `INFO152project_jal547/database.sql`.
+- The default XAMPP database config is already set in `INFO152project_jal547/includes/db.php`:
+  - host: `localhost`
+  - user: `root`
+  - password: `` (empty)
+  - database: `todo_app`
+- Visit `http://localhost/INFO152project_jal547/` to run the app.
