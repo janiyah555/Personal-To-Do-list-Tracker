@@ -1,4 +1,4 @@
-#Personal To-Do List Tracker
+# Personal To-Do List Tracker
 
 A full-stack task management web application built with PHP and MySQL that allows users to securely create, manage, update, and track personal tasks.
 
