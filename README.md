@@ -1,61 +1,136 @@
-# Personal-To-Do-list-Tracker
+#Personal To-Do List Tracker
 
-This repository contains a PHP-based to-do list tracker website in the `INFO152project_jal547/` folder.
+A full-stack task management web application built with PHP and MySQL that allows users to securely create, manage, update, and track personal tasks.
 
-## Project structure
+Features
+- User Authentication — Users can register, log in, and log out securely.
+- Task Management — Create, view, edit, and delete personal tasks.
+- Personal Dashboard — View and manage tasks from a centralized dashboard.
+- Task Tracking — Organize and monitor personal tasks through the application.
+- Session Management — Uses PHP sessions to maintain authenticated user accounts.
+- Database Integration — Stores user and task information using MySQL.
+- Responsive Interface — Designed with HTML and CSS for a clean and accessible user experience.
 
-- `INFO152project_jal547/index.php` - main entry page
-- `INFO152project_jal547/login.php` - login page
-- `INFO152project_jal547/logout.php` - logout script
-- `INFO152project_jal547/database.sql` - database schema and initial setup
-- `INFO152project_jal547/css/` - stylesheet folder
-- `INFO152project_jal547/js/` - JavaScript folder
-- `INFO152project_jal547/includes/` - shared header/footer and database connection
-- `INFO152project_jal547/pages/` - task pages for add, edit, delete and dashboard
+#Technologies
+Technology	Purpose
+PHP	Server-side application logic and authentication
+MySQL	Database management and data storage
+HTML	Website structure and content
+CSS	Styling and page layout
+JavaScript	Client-side functionality and interactivity
+XAMPP	Local development server and MySQL environment
+Git/GitHub	Version control and project management
+Screenshots
 
-## Setup instructions
+#Home Page
 
-1. Install a PHP environment with MySQL or MariaDB support.
-   - Locally: XAMPP, WAMP, MAMP, LAMP, or PHP built-in server + MySQL
-   - Remotely: any PHP hosting provider
+screenshot of home page here.
 
-2. Create the database.
-   - Import `INFO152project_jal547/database.sql` into your MySQL/MariaDB server.
-   - Example:
-     ```bash
-     mysql -u root -p < INFO152project_jal547/database.sql
-     ```
+<img width="2932" height="1750" alt="image" src="https://github.com/user-attachments/assets/42294ca9-8977-4ddd-a551-4bdbfba4915b" />
 
-3. Configure the database connection.
-   - Open `INFO152project_jal547/includes/db.php`
-   - Update the host, username, password, and database name as needed.
 
-4. Place the project in your web server root.
-   - Example local path: `htdocs/INFO152project_jal547` or `public_html/INFO152project_jal547`
-   - Access it through your browser, e.g. `http://localhost/INFO152project_jal547/`
+#Login Page
 
-## Important note
+ screenshot of  login page here.
 
-This project uses PHP and a SQL database, so it cannot run on GitHub Pages alone. Use a PHP-capable server or hosting provider.
 
-## Optional next steps
 
-- Add environment-specific database credentials if needed
-- Secure the login logic for production use
-- Deploy to a PHP host such as 000webhost, InfinityFree, or a VPS with Apache/Nginx and PHP
+Dashboard
 
-## XAMPP setup notes
+Add a screenshot of your task dashboard here.
 
-If you are using XAMPP:
+![Dashboard](path/to/dashboard-screenshot.png)
 
-- Copy the `INFO152project_jal547/` folder into your XAMPP web root:
-  - Windows: `C:\xampp\htdocs\INFO152project_jal547`
-  - Linux: `/opt/lampp/htdocs/INFO152project_jal547`
-- Start Apache and MySQL from the XAMPP control panel.
-- Open `http://localhost/phpmyadmin` and import `INFO152project_jal547/database.sql`.
-- The default XAMPP database config is already set in `INFO152project_jal547/includes/db.php`:
-  - host: `localhost`
-  - user: `root`
-  - password: `` (empty)
-  - database: `todo_app`
-- Visit `http://localhost/INFO152project_jal547/` to run the app.
+Task Management
+
+Add a screenshot showing the task creation/editing functionality here.
+
+![Task Management](path/to/task-management-screenshot.png)
+
+Note: Replace the screenshot paths above with the actual image filenames after uploading your screenshots to the repository.
+
+Setup Instructions
+Prerequisites
+
+To run this application locally, you will need:
+
+XAMPP
+A web browser
+Git (optional)
+1. Clone the Repository
+
+Clone this repository into your XAMPP htdocs folder:
+
+git clone https://github.com/janiyah555/Personal-To-Do-list-Tracker.git
+
+Or download the repository as a ZIP file and extract it into the htdocs folder.
+
+2. Start XAMPP
+
+Open the XAMPP Control Panel and start:
+
+Apache
+MySQL
+3. Set Up the Database
+Open phpMyAdmin.
+Create a database for the application.
+Import the provided database.sql file.
+Make sure the database configuration in the project matches your local MySQL setup.
+4. Move the Project
+
+Make sure the project is located inside your XAMPP htdocs folder.
+
+The project structure should look similar to:
+
+htdocs/
+└── INFO152project_jal547/
+    ├── css/
+    ├── js/
+    ├── includes/
+    ├── pages/
+    ├── index.php
+    ├── login.php
+    ├── logout.php
+    └── database.sql
+5. Open the Application
+
+Once Apache and MySQL are running, open your web browser and go to:
+
+http://localhost/INFO152project_jal547/
+
+From there, you can create an account, log in, and manage your tasks.
+
+Key Contributions
+Developed a full-stack task management application using PHP, MySQL, HTML, CSS, and JavaScript.
+Implemented user authentication and PHP session management to control access to task-management features.
+Built functionality for users to create, edit, delete, and manage personal tasks.
+Developed a user dashboard for viewing and organizing tasks.
+Integrated the application with a MySQL database for persistent storage of user and task information.
+Designed the application's navigation and user interface using HTML and CSS.
+Tested and debugged the application locally using XAMPP, Apache, and MySQL.
+Used GitHub for version control and documented the setup process so the application can be reproduced in another development environment.
+Project Structure
+INFO152project_jal547/
+├── css/
+│   └── style.css
+├── js/
+├── includes/
+│   ├── header.php
+│   └── footer.php
+├── pages/
+│   ├── dashboard.php
+│   ├── add_task.php
+│   └── ...
+├── index.php
+├── login.php
+├── logout.php
+└── database.sql
+Running Locally
+
+This application is designed to run in a local XAMPP environment because it uses PHP and MySQL.
+
+GitHub Pages is not supported for this project because GitHub Pages does not execute PHP or provide a MySQL database.
+
+Project Purpose
+
+This project was developed as part of my Web Systems and Services coursework to gain hands-on experience building a database-driven web application and working with server-side programming, authentication, database integration, and web development.
